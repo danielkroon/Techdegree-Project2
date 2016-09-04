@@ -82,7 +82,9 @@ ul {
 }
 
 
-
+.portfolio-title {
+  margin: 0 800px 0 800px;
+}
 
 /* Layout portfolio */
 
@@ -102,7 +104,38 @@ ul {
     height: 90%;
     margin-top: 30px;
   }
+  
+  .primary, .secondary {
+    width: 300px;
+    
+  }
 }
+
+
+/* Tablet screens */
+@media screen and (min-width: 769px) {
+  
+  .row {
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  
+  .primary, .secondary{
+    flex: 1 50%;
+  }
+  
+  .main-nav {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .primary, .secondary{
+    flex: 1 30%;
+  }
+}
+  
 
 /* Layout footer */
 
@@ -131,6 +164,7 @@ ul {
     
     .nav-footer {
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       
       li {
