@@ -385,9 +385,23 @@ ul {
   padding: 0;
   list-style: none; }
 
+/* Layout */
+.container {
+  display: flex;
+  margin: 0	auto;
+  background-color: red; }
+
+.column {
+  display: flex;
+  margin: 10px;
+  flex: 1 1 0px;
+  border: solid 5px blue; }
+
 /* Navigation */
-.main-header {
-  background-color: #EDEDED; }
+#main-header {
+  background-color: #EDEDED;
+  flex-direction: column;
+  align-items: center; }
 
 .main-nav a {
   display: block;
@@ -395,7 +409,23 @@ ul {
   background-color: white;
   border-radius: 4px; }
 
+/* Layout header  */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .main-nav .name {
+    align-self: center; }
+  .main-nav li {
+    align-self: center;
+    width: 85%;
+    margin: 10px;
+    text-align: center; }
+
 /* About me */
+#about {
+  flex-direction: column; }
+
 .profile-image {
   width: 150px;
   height: 150px;
@@ -407,19 +437,6 @@ ul {
   color: #7F7F7F;
   margin: 30px;
   text-align: center; }
-
-/* Layout header  */
-.main-header, .main-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .main-header .name, .main-nav .name {
-    align-self: center; }
-  .main-header li, .main-nav li {
-    align-self: center;
-    width: 85%;
-    margin: 10px;
-    text-align: center; }
 
 .portfolio-title {
   margin: 0 800px 0 800px; }
@@ -450,47 +467,29 @@ ul {
     flex: 1 50%; }
 
   .main-nav {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  #about {
+    flex-direction: row-reverse; } }
 @media screen and (min-width: 1024px) {
   .primary, .secondary {
     flex: 1 30%; } }
 /* Layout footer */
-.main-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #EDEDED;
-  margin: 30px 0 0 0; }
-  .main-footer h3 {
-    margin: 30px 0 0 0; }
-  .main-footer p {
-    text-align: center;
-    margin: 10px; }
-
-section {
-  display: flex;
-  margin: 0	auto;
-  background-color: red; }
-
-.column {
-  display: flex;
-  margin: 10px;
-  flex: 1 1 0px;
-  border: solid 5px blue; }
-
 #contact {
   flex-direction: column;
   text-align: center; }
 
-#seperator {
-  border-top: 5px solid blue;
+.seperator {
+  border-top: 3px solid blue;
   width: 85%;
   margin: 30px 0 30px 0;
-  border-radius: 3px; }
+  border-radius: 3px;
+  align-self: center; }
 
-#nav-footer {
+.nav-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 30px 0 30px 0; }
 
 /*# sourceMappingURL=styles.css.map */
