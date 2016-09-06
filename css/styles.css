@@ -466,14 +466,31 @@ ul {
   .main-footer p {
     text-align: center;
     margin: 10px; }
-  .main-footer .seperator {
-    border-top: 1px solid blue;
-    width: 85%;
-    margin: 30px 0 0 0;
-    border-radius: 3px; }
-  .main-footer .nav-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
+
+section {
+  display: flex;
+  margin: 0	auto;
+  background-color: red; }
+
+.column {
+  display: flex;
+  margin: 10px;
+  flex: 1 1 0px;
+  border: solid 5px blue; }
+
+#contact {
+  flex-direction: column;
+  text-align: center; }
+
+#seperator {
+  border-top: 5px solid blue;
+  width: 85%;
+  margin: 30px 0 30px 0;
+  border-radius: 3px; }
+
+#nav-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=styles.css.map */

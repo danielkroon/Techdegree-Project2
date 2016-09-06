@@ -154,22 +154,38 @@ ul {
     text-align:center;
     margin: 10px;
     }
-    
-    .seperator {
-      border-top: 1px solid blue;
-      width: 85%;
-      margin: 30px 0 0 0;
-      border-radius: 3px;
-    }
-    
-    .nav-footer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      
-      li {
-        
-      }
-    
-    }
 }
+
+
+section	{
+    display: flex;
+		// max-width:	740px;
+		margin:	0	auto;
+    background-color: red;
+  }
+
+.column	{
+      display: flex;
+  		margin:	10px;
+      flex: 1 1 0px; 	// <flex-grow>	<flex-shrink>	<flex-basis>
+      border: solid 5px blue; 
+  }
+  
+#contact {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+#seperator {
+    border-top: 5px solid blue;
+    width: 85%;
+    margin: 30px 0 30px 0;
+    border-radius: 3px;
+  }
+  
+#nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } 
+  
