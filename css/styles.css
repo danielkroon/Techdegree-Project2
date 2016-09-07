@@ -388,17 +388,12 @@ ul {
 /* Layout */
 .container {
   display: flex;
-  margin: 0	auto;
-  background-color: red; }
-
-.column {
-  display: flex;
-  margin: 10px;
-  flex: 1 1 0px;
-  border: solid 5px blue; }
+  margin: 0	auto; }
 
 /* Navigation */
-#main-header {
+.main-header {
+  display: flex;
+  margin: 0 auto;
   background-color: #EDEDED;
   flex-direction: column;
   align-items: center; }
@@ -421,10 +416,17 @@ ul {
     width: 85%;
     margin: 10px;
     text-align: center; }
+  @media screen and (min-width: 769px) {
+    .main-nav {
+      flex-direction: row; } }
 
 /* About me */
-#about {
+.about {
+  display: flex;
   flex-direction: column; }
+  @media screen and (min-width: 769px) {
+    .about {
+      flex-direction: row-reverse; } }
 
 .profile-image {
   width: 150px;
@@ -437,59 +439,67 @@ ul {
   color: #7F7F7F;
   margin: 30px;
   text-align: center; }
+  @media screen and (min-width: 769px) {
+    .about-me {
+      text-align: left;
+      align-self: center;
+      max-width: 500px; } }
 
 .portfolio-title {
-  margin: 0 800px 0 800px; }
+  display: flex;
+  justify-content: center; }
 
 /* Layout portfolio */
-.row, .col {
+section {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
-  .row p, .col p {
+  @media screen and (min-width: 769px) {
+    section {
+      flex-direction: row;
+      flex-flow: wrap; } }
+
+.column {
+  display: flex;
+  margin: 10px;
+  border: solid 5px blue;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px; }
+  .column p {
     text-align: center;
     margin: 10px; }
-  .row .portfolio-images, .col .portfolio-images {
-    width: 90%;
-    height: 90%;
-    margin-top: 30px; }
-  .row .primary, .row .secondary, .col .primary, .col .secondary {
-    width: 300px; }
 
-/* Tablet screens */
-@media screen and (min-width: 769px) {
-  .row {
-    flex-direction: row;
-    flex-flow: wrap; }
+.portfolio-images {
+  width: 100%; }
 
-  .primary, .secondary {
-    flex: 1 50%; }
-
-  .main-nav {
-    flex-direction: row; }
-
-  #about {
-    flex-direction: row-reverse; } }
-@media screen and (min-width: 1024px) {
-  .primary, .secondary {
-    flex: 1 30%; } }
-/* Layout footer */
+/* Layout contact */
 #contact {
   flex-direction: column;
-  text-align: center; }
+  text-align: center;
+  margin: 0 20px 0 20px; }
+
+.tel, .mail {
+  font-weight: 900;
+  padding-left: 15px; }
 
 .seperator {
-  border-top: 3px solid blue;
+  border-top: 2px solid black;
   width: 85%;
   margin: 30px 0 30px 0;
   border-radius: 3px;
   align-self: center; }
 
+/* Layout footer */
 .nav-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 0 30px 0; }
+  .nav-footer li {
+    padding: 0 20px 0 20px; }
+  .nav-footer #footer-1 {
+    margin-right: auto; }
 
 /*# sourceMappingURL=styles.css.map */
