@@ -458,7 +458,9 @@ section {
   @media screen and (min-width: 769px) {
     section {
       flex-direction: row;
-      flex-flow: wrap; } }
+      flex-flow: wrap;
+      justify-content: center;
+      align-items: baseline; } }
 
 .column {
   display: flex;
