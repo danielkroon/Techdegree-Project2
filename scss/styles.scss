@@ -1,7 +1,6 @@
 @import "variables";
 @import "normalize";
 
-
 /* Global */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -23,17 +22,8 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-/* Layout */ 
-
-
-.container {
-    display: flex;
-		margin:	0	auto;
-    // max-width:	740px;
-  }
   
-/* Navigation */ 
+/* Header & Navigation */ 
 
 .main-header {
     display: flex;
@@ -41,42 +31,43 @@ ul {
     background-color: $header--background-color;
     flex-direction: column;
     align-items: center;
+    
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 95%;
+    }
 }
 
 .main-nav {
-    a {
-      display: block;
-      padding: 7px;
-      background-color: white;
-      border-radius: 4px;  
-    }  
-}
-
-/* Layout header  */
-
- .main-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; //kan waarschijnlijk verwijderd worden
+  display: flex;
+  flex-direction: column;
+    
+  .name {
+      align-self: center;
       
-    .name {
-        align-self: center;
-    }
-    
-    li {
-        align-self: center;
-        width: 85%;
-        margin: 10px;
-        text-align: center;
-    }  
-    
-    @media screen and (min-width: 769px) {
-      flex-direction: row;
-    }
+      @media screen and (min-width: 1024px) {
+        margin-right: auto;
+      }
+  }
   
-    @media screen and (min-width: 1024px) {
-      
-    }
+  a {
+    display: block;
+    padding: 7px;
+    background-color: white;
+    border-radius: 4px;  
+  }  
+  
+  li {
+      align-self: center;
+      width: 85%;
+      margin: 10px;
+      text-align: center;
+  }  
+  
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
 }
 
 /* About me */ 
@@ -87,7 +78,13 @@ ul {
   
   @media screen and (min-width: 769px) {
       flex-direction: row-reverse;
+      justify-content: center;
   }  
+  
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+  }
 }
 
 .profile-image {
@@ -102,6 +99,7 @@ ul {
     color: $text-color-about;
     margin: 30px;
     text-align: center;
+    font-size: 20px;
     
     @media screen and (min-width: 769px) {
         text-align: left;
@@ -115,7 +113,7 @@ ul {
   justify-content: center;
 }
 
-  /* Layout portfolio */
+/* Layout portfolio */
   
 section {
   margin: 0 auto;
@@ -132,47 +130,46 @@ section {
 }
 
 .column	{
-      display: flex;
-      margin:	10px;
-      border: solid 5px blue; 
-      flex-direction: column;
-      align-items: center;
-      max-width: 400px;
-      
-      
-      p {
-        text-align: center;
-        margin: 10px;
-      }
-    }
-      
-  .portfolio-images {
-    width: 100%;
-  }
-  
-  /* Layout contact */
+    display: flex;
+    margin:	10px;
+    // border: solid 5px blue; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
     
-#contact {
+    p {
+      text-align: center;
+      margin: 10px;
+    }
+}
+      
+.portfolio-images {
+    width: 100%;
+}
+  
+/* Layout contact */
+    
+.contact {
+    display: flex;
     flex-direction: column;
     text-align: center;
     margin:  0 20px 0 20px ;
   }
   
-  .tel, .mail {
+.tel, .mail {
     font-weight: 900;
     padding-left: 15px;
   }
   
-  
 .seperator {
-    border-top: 2px solid black;
-    width: 85%;
-    margin: 30px 0 30px 0;
+    border-top: 1px solid black;
+    width: 95%;
+    margin: 15px 0 5px 0;
     border-radius: 3px;
     align-self: center;
   }
   
-    /* Layout footer */
+  /* Layout footer */
   
 .nav-footer {
     display: flex;
@@ -182,10 +179,23 @@ section {
     
       li {
         padding: 0 20px 0 20px;
+        margin: 0 25px 0 25px;
       }
+    }
     
+    #footer-2, #footer-3, #footer-4 {
+      display: none;
+    }
+      
+      @media screen and (min-width: 769px) {  
       #footer-1 {
         margin-right: auto;
       }
+      #footer-2, #footer-3, #footer-4 {
+        display: inherit;
+      }
+      
+      #footer-5 {
+        display: none;
+    }
   } 
-  
