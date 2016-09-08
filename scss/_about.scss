@@ -1,0 +1,37 @@
+.about {
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  
+  @media screen and (min-width: 769px) {
+      flex-direction: row-reverse;
+      justify-content: center;
+      max-width: 840px;
+  }  
+  
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+    max-width: 1260px;
+  }
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  margin: 30px 0 30px 0;
+  align-self: center;  
+}
+
+.about-me {
+    color: $text-color-about;
+    margin: 0 30px 30px 0;
+    text-align: center;
+    font-size: 20px;
+    
+    @media screen and (min-width: 769px) {
+        text-align: left;
+        align-self: center;
+      }
+}

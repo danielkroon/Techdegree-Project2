@@ -368,11 +368,13 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-/* Global */
 body {
   font-family: 'Open Sans', sans-serif;
   color: #4A4A4A;
   background-color: white; }
+
+.l-wrapper {
+  background-color: #EDEDED; }
 
 a {
   text-decoration: none;
@@ -384,10 +386,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-
-/* Header & Navigation */
-.l-wrapper {
-  background-color: #EDEDED; }
 
 .main-header {
   max-width: 1260px;
@@ -426,7 +424,6 @@ ul {
     .main-nav {
       flex-direction: row; } }
 
-/* About me */
 .about {
   max-width: 530px;
   display: flex;
@@ -463,7 +460,6 @@ ul {
   display: flex;
   justify-content: center; }
 
-/* Layout portfolio */
 section {
   margin: 0 auto;
   display: flex;
@@ -489,7 +485,6 @@ section {
 .portfolio-images {
   width: 100%; }
 
-/* Layout contact */
 .contact {
   display: flex;
   flex-direction: column;
@@ -514,7 +509,6 @@ section {
   border-radius: 3px;
   align-self: center; }
 
-/* Layout footer */
 .nav-footer {
   display: flex;
   flex-direction: row;

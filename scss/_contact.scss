@@ -1,0 +1,28 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 530px;
+    
+    @media screen and (min-width: 769px) {
+      max-width: 840px;
+    }  
+    
+    @media screen and (min-width: 1024px) {
+      max-width: 1260px;
+    }
+  }
+  
+.tel, .mail {
+    font-weight: 900;
+    padding-left: 15px;
+  }
+  
+.seperator {
+    border-top: 1px solid black;
+    width: 95%;
+    margin: 15px 0 5px 0;
+    border-radius: 3px;
+    align-self: center;
+  }
