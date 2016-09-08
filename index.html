@@ -8,26 +8,30 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
 </head>
     <body>
-        
-        <header class="main-header">
+    
+    <header class="l-wrapper">
+        <div class="main-header">
             <h1 class="name"><a href="#">Dani&#235;l Kroon</a></h1>
             <ul class="main-nav">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
-        </header>
+        </div>    
+    </header>
         
-        <div class="about">
-            <img src="images/me.jpg" alt="Dani&#235;l Kroon" class="profile-image">
-            <p class="about-me">
-                Hi! I'm a front-end developer who loves responsive design and css. 
-                I recently finished a degree in front-end web development at Treehouse and im excited to put 
-                all my skills to use!</p>
+        <div class="l-wrapper">
+            <div class="about">
+                <img src="images/me.jpg" alt="Dani&#235;l Kroon" class="profile-image">
+                <p class="about-me">
+                    Hi! I'm a front-end developer who loves responsive design and css. 
+                    I recently finished a degree in front-end web development at Treehouse and im excited to put 
+                    all my skills to use!</p>
             </div>
+        </div>
         
         <div class="portfolio-title">
-            <h1>Portfolio</h1>
+            <a id="portfolio"><h1>Portfolio</h1></a>
         </div>
         
         <section>
@@ -87,22 +91,22 @@
       </section>
         
     <!--Contact-->
+    <footer class="l-wrapper">
         <div class="contact">
-                <h3>CONTACT</h3>
+                <a id="contact"><h3>CONTACT</h3></a>
                     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
                     <p>Phone<span class="tel"><a href="tel:+1111555-1234">+1 (111) 555-1234</a></span></p>            
                     <p>Email<span class="mail"><a href="mailto:drg.kroon@gmail.com">drg.kroon@gmail.com</a></span></p>
                 <hr class="seperator">
         </div>
-        
-    <!--footer-->    
-        <footer>
+           
+        <footer class="l-wrapper">
                 <ul class="nav-footer">
                     <li id="footer-1"><a href="#top">Dani&#235;l Kroon</a></li>
-                    <li id="footer-2"><a href="#">HOME</a></li>
-                    <li id="footer-3"><a href="#">PORTFOLIO</a></li>
-                    <li id="footer-4"><a href="#">CONTACT</a></li>
-                    <li id="footer-5"><a class="top" href="#">BACK TO TOP</a></li>
+                    <li id="footer-2"><a href="#top">HOME</a></li>
+                    <li id="footer-3"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li id="footer-4"><a href="#contact">CONTACT</a></li>
+                    <li id="footer-5"><a class="top" href="#top">BACK TO TOP</a></li>
                 </ul>
         </footer>    
     </body>

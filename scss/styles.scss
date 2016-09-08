@@ -24,18 +24,23 @@ ul {
 }
   
 /* Header & Navigation */ 
+.l-wrapper {
+  background-color: $header--background-color;
+}
+
+
 
 .main-header {
+    max-width: 1260px;
     display: flex;
     margin: 0 auto;
-    background-color: $header--background-color;
     flex-direction: column;
     align-items: center;
     
     @media screen and (min-width: 1024px) {
       flex-direction: row;
       justify-content: space-between;
-      width: 95%;
+      width: 100%;
     }
 }
 
@@ -53,9 +58,13 @@ ul {
   
   a {
     display: block;
-    padding: 7px;
+    padding:  10px 100px 10px 100px;
     background-color: white;
     border-radius: 4px;  
+    
+    @media screen and (min-width: 769px) {
+      padding:  10px 50px 10px 50px;
+    }
   }  
   
   li {
@@ -73,17 +82,20 @@ ul {
 /* About me */ 
 
 .about {
+  max-width: 530px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   
   @media screen and (min-width: 769px) {
       flex-direction: row-reverse;
       justify-content: center;
+      max-width: 840px;
   }  
   
   @media screen and (min-width: 1024px) {
     justify-content: space-between;
-    margin: 0 30px 0 30px;
+    max-width: 1260px;
   }
 }
 
@@ -91,20 +103,19 @@ ul {
   width: 150px;
   height: 150px;
   border-radius: 4px;
-  margin-top: 30px;
+  margin: 30px 0 30px 0;
   align-self: center;  
 }
 
 .about-me {
     color: $text-color-about;
-    margin: 30px;
+    margin: 0 30px 30px 0;
     text-align: center;
     font-size: 20px;
     
     @media screen and (min-width: 769px) {
         text-align: left;
         align-self: center;
-        max-width: 500px;
       }
 }
 
@@ -153,7 +164,16 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin:  0 20px 0 20px ;
+    margin: 0 auto;
+    max-width: 530px;
+    
+    @media screen and (min-width: 769px) {
+      max-width: 840px;
+    }  
+    
+    @media screen and (min-width: 1024px) {
+      max-width: 1260px;
+    }
   }
   
 .tel, .mail {
@@ -175,11 +195,19 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px 0 30px 0;
+    max-width: 530px;
+    margin: 0 auto;
     
       li {
-        padding: 0 20px 0 20px;
-        margin: 0 25px 0 25px;
+        padding: 20px;
+      }
+      
+      @media screen and (min-width: 769px) {
+        max-width: 840px;
+      }  
+      
+      @media screen and (min-width: 1024px) {
+        max-width: 1260px;
       }
     }
     

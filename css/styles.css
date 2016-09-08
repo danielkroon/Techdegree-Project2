@@ -386,17 +386,20 @@ ul {
   list-style: none; }
 
 /* Header & Navigation */
+.l-wrapper {
+  background-color: #EDEDED; }
+
 .main-header {
+  max-width: 1260px;
   display: flex;
   margin: 0 auto;
-  background-color: #EDEDED;
   flex-direction: column;
   align-items: center; }
   @media screen and (min-width: 1024px) {
     .main-header {
       flex-direction: row;
       justify-content: space-between;
-      width: 95%; } }
+      width: 100%; } }
 
 .main-nav {
   display: flex;
@@ -408,9 +411,12 @@ ul {
         margin-right: auto; } }
   .main-nav a {
     display: block;
-    padding: 7px;
+    padding: 10px 100px 10px 100px;
     background-color: white;
     border-radius: 4px; }
+    @media screen and (min-width: 769px) {
+      .main-nav a {
+        padding: 10px 50px 10px 50px; } }
   .main-nav li {
     align-self: center;
     width: 85%;
@@ -422,34 +428,36 @@ ul {
 
 /* About me */
 .about {
+  max-width: 530px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 0 auto; }
   @media screen and (min-width: 769px) {
     .about {
       flex-direction: row-reverse;
-      justify-content: center; } }
+      justify-content: center;
+      max-width: 840px; } }
   @media screen and (min-width: 1024px) {
     .about {
       justify-content: space-between;
-      margin: 0 30px 0 30px; } }
+      max-width: 1260px; } }
 
 .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 4px;
-  margin-top: 30px;
+  margin: 30px 0 30px 0;
   align-self: center; }
 
 .about-me {
   color: #7F7F7F;
-  margin: 30px;
+  margin: 0 30px 30px 0;
   text-align: center;
   font-size: 20px; }
   @media screen and (min-width: 769px) {
     .about-me {
       text-align: left;
-      align-self: center;
-      max-width: 500px; } }
+      align-self: center; } }
 
 .portfolio-title {
   display: flex;
@@ -486,7 +494,14 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0 20px 0 20px; }
+  margin: 0 auto;
+  max-width: 530px; }
+  @media screen and (min-width: 769px) {
+    .contact {
+      max-width: 840px; } }
+  @media screen and (min-width: 1024px) {
+    .contact {
+      max-width: 1260px; } }
 
 .tel, .mail {
   font-weight: 900;
@@ -504,10 +519,16 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 30px 0 30px 0; }
+  max-width: 530px;
+  margin: 0 auto; }
   .nav-footer li {
-    padding: 0 20px 0 20px;
-    margin: 0 25px 0 25px; }
+    padding: 20px; }
+  @media screen and (min-width: 769px) {
+    .nav-footer {
+      max-width: 840px; } }
+  @media screen and (min-width: 1024px) {
+    .nav-footer {
+      max-width: 1260px; } }
 
 #footer-2, #footer-3, #footer-4 {
   display: none; }
