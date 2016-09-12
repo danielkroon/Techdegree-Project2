@@ -18,19 +18,19 @@
       }
     }
     
-    #footer-2, #footer-3, #footer-4 {
+#footer-2, #footer-3, #footer-4 {
       display: none;
     }
-      
-      @media screen and (min-width: 769px) {  
-      #footer-1 {
-        margin-right: auto;
-      }
-      #footer-2, #footer-3, #footer-4 {
-        display: inherit;
-      }
-      
-      #footer-5 {
-        display: none;
+    
+    @media screen and (min-width: 769px) {  
+    #footer-1 {
+      margin-right: auto;
     }
-  } 
+    #footer-2, #footer-3, #footer-4 {
+      display: inherit;
+    }
+    
+    #footer-5 {
+      display: none;
+  }
+} 
