@@ -30,20 +30,14 @@ ul {
 .main-nav {
   display: flex;
   flex-direction: column;
-    
-  .name {
-      align-self: center;
-      
-      @media screen and (min-width: 1024px) {
-        margin-right: auto;
-      }
-  }
   
   a {
     display: block;
     padding:  10px 100px 10px 100px;
     background-color: white;
     border-radius: 4px;  
+    text-align: center;
+    
     
     @media screen and (min-width: 769px) {
       padding:  10px 50px 10px 50px;
@@ -54,10 +48,17 @@ ul {
       align-self: center;
       width: 85%;
       margin: 10px;
-      text-align: center;
   }  
   
   @media screen and (min-width: 769px) {
     flex-direction: row;
   }
+}
+
+.name {
+    align-self: center;
+    
+    @media screen and (min-width: 1024px) {
+      margin-right: auto;
+    }
 }

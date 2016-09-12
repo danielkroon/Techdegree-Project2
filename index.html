@@ -5,6 +5,7 @@
     <title>Dani&#235;l Kroon - Project2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/picturefill.min.js" async></script>
     <link href="http://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" type="text/css" />
 </head>
     <body>
@@ -19,10 +20,25 @@
             </ul>
         </div>    
     </header>
-        
         <div class="l-wrapper">
             <div class="about">
-                <img src="images/me.jpg" alt="Dani&#235;l Kroon" class="profile-image">
+                <picture class="picture-wrapper">
+                    <source 
+                        media="(orientation: landscpae)"
+                        srcset="images/profile-large.jpg 2048w,
+                                images/profile-medium.jpg 1400w,
+                                images/profile-small.jpg 800w"
+                        />
+                    <source
+                        srcset="images/profile-square-large.jpg 1000w,
+                                images/profile-square-medium.jpg 800w"
+                        />
+                    <img
+                        src="images/profile.jpg"
+                        alt="Photograph of Dani&#235;l Kroon in front of trees."
+                        class="profile-image"
+                        />
+                </picture>    
                 <p class="about-me">
                     Hi! I'm a front-end developer who loves responsive design and css. 
                     I recently finished a degree in front-end web development at Treehouse and im excited to put 
@@ -99,15 +115,14 @@
                     <p>Email<span class="mail"><a href="mailto:drg.kroon@gmail.com">drg.kroon@gmail.com</a></span></p>
                 <hr class="seperator">
         </div>
-           
-        <footer class="l-wrapper">
-                <ul class="nav-footer">
-                    <li id="footer-1"><a href="#top">Dani&#235;l Kroon</a></li>
-                    <li id="footer-2"><a href="#top">HOME</a></li>
-                    <li id="footer-3"><a href="#portfolio">PORTFOLIO</a></li>
-                    <li id="footer-4"><a href="#contact">CONTACT</a></li>
-                    <li id="footer-5"><a class="top" href="#top">BACK TO TOP</a></li>
-                </ul>
-        </footer>    
+    <!--Nav footer-->   
+        <ul class="nav-footer">
+            <li id="footer-1"><a href="#top">Dani&#235;l Kroon</a></li>
+            <li id="footer-2"><a href="#top">HOME</a></li>
+            <li id="footer-3"><a href="#portfolio">PORTFOLIO</a></li>
+            <li id="footer-4"><a href="#contact">CONTACT</a></li>
+            <li id="footer-5"><a class="top" href="#top">BACK TO TOP</a></li>
+        </ul>
+        </footer>
     </body>
 </html>

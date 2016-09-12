@@ -402,27 +402,28 @@ ul {
 .main-nav {
   display: flex;
   flex-direction: column; }
-  .main-nav .name {
-    align-self: center; }
-    @media screen and (min-width: 1024px) {
-      .main-nav .name {
-        margin-right: auto; } }
   .main-nav a {
     display: block;
     padding: 10px 100px 10px 100px;
     background-color: white;
-    border-radius: 4px; }
+    border-radius: 4px;
+    text-align: center; }
     @media screen and (min-width: 769px) {
       .main-nav a {
         padding: 10px 50px 10px 50px; } }
   .main-nav li {
     align-self: center;
     width: 85%;
-    margin: 10px;
-    text-align: center; }
+    margin: 10px; }
   @media screen and (min-width: 769px) {
     .main-nav {
       flex-direction: row; } }
+
+.name {
+  align-self: center; }
+  @media screen and (min-width: 1024px) {
+    .name {
+      margin-right: auto; } }
 
 .about {
   max-width: 530px;
@@ -439,18 +440,26 @@ ul {
       justify-content: space-between;
       max-width: 1260px; } }
 
+.picture-wrapper {
+  display: flex;
+  justify-content: center; }
+  @media screen and (min-width: 769px) {
+    .picture-wrapper {
+      justify-content: center; } }
+  @media screen and (min-width: 1024px) {
+    .picture-wrapper {
+      justify-content: space-between; } }
+
 .profile-image {
-  width: 150px;
-  height: 150px;
+  width: 50%;
+  height: 50%;
   border-radius: 4px;
-  margin: 30px 0 30px 0;
-  align-self: center; }
+  margin: 30px 10px 30px 0; }
 
 .about-me {
   color: #7F7F7F;
-  margin: 0 30px 30px 0;
   text-align: center;
-  font-size: 20px; }
+  font-size: 28px; }
   @media screen and (min-width: 769px) {
     .about-me {
       text-align: left;
