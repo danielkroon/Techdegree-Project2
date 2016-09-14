@@ -9,12 +9,12 @@
         padding: 20px;
       }
       
-      @media screen and (min-width: 769px) {
-        max-width: 840px;
+      @media screen and (min-width: 768px) {
+        max-width: 768px;
       }  
       
       @media screen and (min-width: 1024px) {
-        max-width: 1260px;
+        max-width: 1024px;
       }
     }
     
@@ -22,7 +22,7 @@
       display: none;
     }
     
-    @media screen and (min-width: 769px) {  
+    @media screen and (min-width: 768px) {  
     #footer-1 {
       margin-right: auto;
     }
